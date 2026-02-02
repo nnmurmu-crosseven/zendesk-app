@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "dev": "pnpm tsx watch src/index.tsx",
-    "start": "pnpm tsx src/index.tsx",
+    "start": "node dist/index.js",
+    "build": "tsup index.tsx --format esm --dts --out-dir dist",
     "app-build": "cd zendesk-app && zcli apps:package",
     "db:pull": "drizzle-kit pull --config ./drizzle.config.ts && shx mkdir -p ./src/db && shx mv ./drizzle/schema.ts ./src/db/schema.ts && shx rm -rf ./drizzle"
   },
@@ -20,6 +21,7 @@
     "@types/pg": "^8.6.0",
     "drizzle-kit": "^0.31.8",
     "shx": "^0.3.4",
+    "tsup": "^8.5.1",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"
   }

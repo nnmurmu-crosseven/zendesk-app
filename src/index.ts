@@ -1,4 +1,3 @@
-//@ts-nocheck
 import { Hono } from 'hono'
 import { handle } from '@hono/node-server/vercel'
 

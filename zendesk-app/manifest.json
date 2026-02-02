@@ -1,0 +1,36 @@
+{
+  "name": "care-portal-info",
+  "author": {
+    "name": "nishu-murmu",
+    "email": "nnmurmu@enacton.com"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": {
+    "support": {
+      "ticket_sidebar": {
+        "url": "assets/iframe.html",
+        "flexible": true
+      }
+    }
+  },
+  "parameters": [
+    {
+      "name": "API_URL",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "X_KEY",
+      "type": "text",
+      "required": true
+    }
+  ],
+  "permissions": {
+    "requests": {
+      "https://dev-care.parkingmd.com/": true
+    }
+  },
+  "version": "1.0.0",
+  "frameworkVersion": "2.0"
+}

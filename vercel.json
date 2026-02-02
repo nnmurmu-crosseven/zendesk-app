@@ -3,7 +3,7 @@
   "outputDirectory": "dist",
   "functions": {
     "dist/index.js": {
-      "runtime": "nodejs22.20.0"
+      "runtime": "22.x"
     }
   },
   "rewrites": [{ "source": "/(.*)", "destination": "/dist/index.js" }]
